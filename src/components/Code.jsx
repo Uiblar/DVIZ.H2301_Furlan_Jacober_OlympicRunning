@@ -8,12 +8,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function Code() {
   return (
     <div className="container">
-      {/* First Accordion for Jupyter Notebook 100% width*/}
       <Accordion sx={{ width: "100%" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          aria-controls="data-cleaning-content"
+          id="data-cleaning-header"
         >
           <Typography>
             In this first Notebook, we have a look at the Dataset and remove
@@ -21,7 +20,6 @@ export default function Code() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {/* Here you would need to link to a rendered version of your notebook */}
           <iframe
             src="clean_data.html"
             width="100%"
@@ -32,16 +30,23 @@ export default function Code() {
       </Accordion>
 
       {/* Second Accordion as Placeholder */}
-      <Accordion>
+      <Accordion sx={{ width: "100%" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls="agedistribution-content"
+          id="agedistribution-header"
         >
-          <Typography>Placeholder Content</Typography>
+          <Typography>
+            In this Notebook we create the plot for the agedistribution by event
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>This is a placeholder for additional content.</Typography>
+          <iframe
+            src="agedistribution_by_event.html"
+            width="100%"
+            height="600px"
+            title="Jupyter Notebook"
+          ></iframe>
         </AccordionDetails>
       </Accordion>
     </div>
