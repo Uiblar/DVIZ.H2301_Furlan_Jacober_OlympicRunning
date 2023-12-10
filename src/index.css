@@ -3,3 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* This will hide scrollbar for the whole body */
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

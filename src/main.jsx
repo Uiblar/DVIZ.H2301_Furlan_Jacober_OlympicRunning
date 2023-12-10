@@ -13,6 +13,7 @@ root.render(
     <BrowserRouter>
       <NavBar />
       <Routes>
+        <Route path="/" element={<DataStory />} />
         <Route path="/datastory" element={<DataStory />} />
         <Route path="/code" element={<Code />} />
       </Routes>

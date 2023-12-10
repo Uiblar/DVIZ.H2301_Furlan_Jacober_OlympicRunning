@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 50%;
+}
+
+/* Add styling for Typography if needed, for example: */
+.typography {
+  flex: 1;
+  padding: 0 20px; /* Adjust padding as needed */
+}
