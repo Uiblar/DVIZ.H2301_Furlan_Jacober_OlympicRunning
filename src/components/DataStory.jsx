@@ -163,6 +163,8 @@ export default function DataStory() {
           </Typography>
           <iframe
             className="image"
+            width={"900px"}
+            height={"600px"}
             src="choropleth_map.html"
             title="Records by Country"
           ></iframe>
