@@ -17,7 +17,7 @@ root.render(
         <Route path="/datastory" element={<DataStory />} />
         <Route path="/code" element={<Code />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   </React.StrictMode>
 );
