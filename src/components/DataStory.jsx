@@ -144,7 +144,7 @@ export default function DataStory() {
             runners.
           </Typography>
           <iframe
-            src="choropleth_map"
+            src="choropleth_map.html"
             width="100%"
             height={650}
             title="Records by Country"
