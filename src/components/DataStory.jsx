@@ -147,6 +147,7 @@ export default function DataStory() {
             onClick={() => openLightbox(4)}
             sx={{ cursor: "pointer" }}
           />
+        </Box>
         <Box className="row">
           <Typography variant="h6" component="p" className="text">
             During the Cold War era, the USA and Russia emerged as formidable
