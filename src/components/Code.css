@@ -1,0 +1,17 @@
+.code-container {
+  overflow-y: auto !important;
+}
+
+.code-container::-webkit-scrollbar {
+  display: block; /* This will enable scrollbar for .code-container */
+  width: 8px; /* You can adjust the width as needed */
+}
+
+.code-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* Customize scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.code-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Customize scrollbar track color */
+}
