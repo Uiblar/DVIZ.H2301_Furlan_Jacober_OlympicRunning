@@ -149,7 +149,12 @@ export default function DataStory() {
           />
         </Box>
         <Box className="row">
-          <Typography variant="h6" component="p" className="text">
+          <Typography
+            variant="h6"
+            component="p"
+            className="text"
+            sx={{ width: 50 }}
+          >
             During the Cold War era, the USA and Russia emerged as formidable
             rivals in global athletics. This rivalry was marked by intense
             competition and numerous record-setting performances. However, over
