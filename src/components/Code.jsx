@@ -63,25 +63,6 @@ export default function Code() {
           <Typography>Age-Distribution by Event</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem Ipsum veritas dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          </Typography>
-          <Typography>
-            Lorem Ipsum veritas dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          </Typography>
-          <Typography>
-            Lorem Ipsum veritas dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          </Typography>
-
           <iframe
             src="agedistribution_by_event.html"
             width="100%"
