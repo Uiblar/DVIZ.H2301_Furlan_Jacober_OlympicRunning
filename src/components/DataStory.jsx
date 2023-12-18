@@ -7,6 +7,7 @@ import sprintEventsImage from "../assets/sprint_events.png";
 import middleDistanceEventsImage from "../assets/middle_distance_events.png";
 import longDistanceEventsImage from "../assets/long_distance_events.png";
 import paceByEventImage from "../assets/pace_by_event.png";
+import winningTimesProgressionImage from "../assets/winning_times_progression.png";
 import "./DataStory.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -22,6 +23,7 @@ export default function DataStory() {
     { src: middleDistanceEventsImage },
     { src: longDistanceEventsImage },
     { src: paceByEventImage },
+    { src: winningTimesProgressionImage },
   ];
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -130,6 +132,21 @@ export default function DataStory() {
             the demands of endurance events.
           </Typography>
         </Box>
+        <Box className="row">
+          <Typography variant="h6" component="p" className="text">
+            The winning times for the marathon have been steadily decreasing
+            over the years. This is likely due to a combination of factors
+            including better training, improved nutrition, and technological
+            advancements in equipment.
+          </Typography>
+          <Box
+            component="img"
+            src={winningTimesProgressionImage}
+            alt="Winning Times Progression"
+            className="image"
+            onClick={() => openLightbox(4)}
+            sx={{ cursor: "pointer" }}
+          />
         <Box className="row">
           <Typography variant="h6" component="p" className="text">
             During the Cold War era, the USA and Russia emerged as formidable
