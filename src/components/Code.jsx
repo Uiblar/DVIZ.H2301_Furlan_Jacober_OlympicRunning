@@ -41,7 +41,7 @@ export default function Code() {
         </AccordionSummary>
         <AccordionDetails>
           <iframe
-            src="../public/clean_data.html"
+            src="clean_data.html"
             width="100%"
             height={650}
             title="Jupyter Notebook"
@@ -83,7 +83,7 @@ export default function Code() {
           </Typography>
 
           <iframe
-            src="../public/agedistribution_by_event.html"
+            src="agedistribution_by_event.html"
             width="100%"
             height={650}
             title="Jupyter Notebook"
@@ -104,7 +104,7 @@ export default function Code() {
         </AccordionSummary>
         <AccordionDetails>
           <iframe
-            src="../public/pace_by_event.html"
+            src="pace_by_event.html"
             width="100%"
             height={650}
             title="Pace by Event Notebook"
@@ -127,7 +127,7 @@ export default function Code() {
         </AccordionSummary>
         <AccordionDetails>
           <iframe
-            src="../public/records_by_country.html"
+            src="records_by_country.html"
             width="100%"
             height={650}
             title="Records by Country Notebook"
@@ -150,7 +150,7 @@ export default function Code() {
         </AccordionSummary>
         <AccordionDetails>
           <iframe
-            src="../public/winning_times_progression.html"
+            src="winning_times_progression.html"
             width="100%"
             height={650}
             title="Winning Times Progression Notebook"
