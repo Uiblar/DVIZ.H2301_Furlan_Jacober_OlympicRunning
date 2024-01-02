@@ -3,7 +3,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
+}
+
+.rightImage {
+  width: 50%;
+  margin-right: 75px;
 }
 
 .image {
@@ -13,5 +18,10 @@
 /* Add styling for Typography if needed, for example: */
 .typography {
   flex: 1;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 20px 20px 20px 20px; /* Adjust padding as needed */
+}
+
+.text {
+  margin-right: 100px;
+  margin-left: 100px;
 }
