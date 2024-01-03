@@ -41,101 +41,113 @@ export default function DataStory() {
             style={{
               // backgroundColor: 'red',
               backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: 'cover', // or 'contain' based on your needs
-              backgroundPosition: 'right',
+              backgroundSize: 'cover',
+              backgroundPosition: 'left',
               backgroundRepeat: 'repeat', // to repeat the image
-              height: '4050px', // or any other size
+              height: '5000px', // or any other size
               width: '100%' // or any other size
             }}
         >
 
           <Box className="container">
-            <Box className="row">
-              <Typography variant="h6" component="p" sx={{mb: 2}}>
-                What is the expected age of peak performance for runners? And does
-                this vary by event? Let's take a look at the age distribution of the
-                top 1000 runners in each event. It is generally accepted that peak
-                performance for athletes is around 25 years old, but is this actually
-                supported by the data?
-                <Tooltip title={marathonhandbook}>
+            <Box className="block0">
+              <Typography className="subtitle">
+                Visualizing Running Data
+              </Typography>
+              <Typography variant="h6" className="text text0">
+                This journey to figure out when runners perform their best covers all types of races, from short sprints to long marathons. We look at interesting aspects like how old the athletes are, whether they're male or female, and how their bodies adapt to sports. This analysis looks closely at the ages of the top 1000 runners in each racing event. It questions the common idea that athletes are at their best around the age of 25. By looking at information from various races, from short to long distances, the research shows that the best age for performance can differ. It especially points out that there are differences in peak performance ages between men and women.
+                <br/>
+                <br/>
+              </Typography>
+            </Box>
+            <Box className="block1">
+              <Typography className="subtitle">
+                Best years for running?
+              </Typography>
+              <Box className="row">
+                <Typography variant="h6" component="p" sx={{mb: 2}}>
+                  What is the expected age of peak performance for runners? And does
+                  this vary by event? Let's take a look at the age distribution of the
+                  top 1000 runners in each event. It is generally accepted that peak
+                  performance for athletes is around 25 years old, but is this actually
+                  supported by the data?
+                  <Tooltip title={marathonhandbook}>
+                    <Link
+                        href={marathonhandbook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ml: "5px"}}
+                    >
+                      <sup>[1]</sup>
+                    </Link>
+                  </Tooltip>
+                </Typography>
+              </Box>
+              <Box className="row">
+                <Typography variant="h6" component="p" className="text">
+                  For the sprint events (100m, 200m, 400m), we see that the peak age
+                  is in the early 20s.
+                  <br/>
+                  It is interesting to note that that the woman peak slightly later
+                  than the man.
+                </Typography>
+                <Box
+                    component="img"
+                    src={sprintEventsImage}
+                    alt="Sprint Events Age Distribution"
+                    className="image"
+                    onClick={() => openLightbox(0)}
+                    sx={{cursor: "pointer"}}
+                />
+              </Box>
+              <Box className="row">
+                <Box
+                    component="img"
+                    src={middleDistanceEventsImage}
+                    alt="Middle Distance Events Age Distribution"
+                    className="image"
+                    onClick={() => openLightbox(1)}
+                    sx={{cursor: "pointer"}}
+                />
+                <Typography variant="h6" component="p" className="text">
+                  For the middle distance events (800m, 1500m, 3000m), we see that the
+                  performance ages remain consistent with our initial observations.
+                  The data suggests a subtle yet observable variance in peak
+                  performance timing between genders across these disciplines.
+                </Typography>
+              </Box>
+              <Box className="row">
+                <Typography variant="h6" component="p" className="text">
+                  Many athlets start their careers on the track and move up to the
+                  half marathon and marathon later in their careers. While this is
+                  reflected in the top times for the marathon, a larger proportion of
+                  the top times in the half marathon are from athletes in their early
+                  20s.
                   <Link
-                      href={marathonhandbook}
+                      href={runnersworld}
                       target="_blank"
                       rel="noopener noreferrer"
                       sx={{ml: "5px"}}
                   >
-                    <sup>[1]</sup>
+                    <sup>[2]</sup>
                   </Link>
-                </Tooltip>
+                </Typography>
+                <Box
+                    component="img"
+                    src={longDistanceEventsImage}
+                    alt="Long Distance Events Age Distribution"
+                    className="image"
+                    onClick={() => openLightbox(2)}
+                    sx={{cursor: "pointer"}}
+                />
+              </Box>
+            </Box>
+            <Box className="block0">
+              <Typography className="subtitle">
+                Running pace and the energy systems
               </Typography>
             </Box>
-            <Box className="row">
-              <Typography variant="h6" component="p" className="text">
-                For the sprint events (100m, 200m, 400m), we see that the peak age
-                is in the early 20s.
-                <br/>
-                It is interesting to note that that the woman peak slightly later
-                than the man.
-              </Typography>
-              <Box
-                  component="img"
-                  src={sprintEventsImage}
-                  alt="Sprint Events Age Distribution"
-                  className="image"
-                  onClick={() => openLightbox(0)}
-                  sx={{cursor: "pointer"}}
-              />
-            </Box>
-            <Box className="row">
-              <Box
-                  component="img"
-                  src={middleDistanceEventsImage}
-                  alt="Middle Distance Events Age Distribution"
-                  className="image"
-                  onClick={() => openLightbox(1)}
-                  sx={{cursor: "pointer"}}
-              />
-              <Typography variant="h6" component="p" className="text">
-                For the middle distance events (800m, 1500m, 3000m), we see that the
-                performance ages remain consistent with our initial observations.
-                The data suggests a subtle yet observable variance in peak
-                performance timing between genders across these disciplines.
-              </Typography>
-            </Box>
-            <Box className="row">
-              <Typography variant="h6" component="p" className="text">
-                Many athlets start their careers on the track and move up to the
-                half marathon and marathon later in their careers. While this is
-                reflected in the top times for the marathon, a larger proportion of
-                the top times in the half marathon are from athletes in their early
-                20s.
-                <Link
-                    href={runnersworld}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{ml: "5px"}}
-                >
-                  <sup>[2]</sup>
-                </Link>
-              </Typography>
-              <Box
-                  component="img"
-                  src={longDistanceEventsImage}
-                  alt="Long Distance Events Age Distribution"
-                  className="image"
-                  onClick={() => openLightbox(2)}
-                  sx={{cursor: "pointer"}}
-              />
-            </Box>
-            <Box className="row">
-              <Box
-                  component="img"
-                  src={paceByEventImage}
-                  alt="Pace by event"
-                  className="rightImage"
-                  onClick={() => openLightbox(3)}
-                  sx={{cursor: "pointer"}}
-              />
+            <Box className="row2">
               <Typography variant="h6" component="p" className="text text5">
                 Athletic performance hinges on two energy systems: anaerobic for
                 short, intense activities like sprints, and aerobic for longer,
@@ -148,27 +160,39 @@ export default function DataStory() {
                 the demands of endurance events.
                 <br/>
                 <br/>
-                The challenge in the 800m run is to balance these systems. Athletes need to start fast enough to be
-                competitive but must conserve enough energy to maintain a strong pace and finish with a powerful sprint.
-                This balancing act between speed and endurance, and the switch between energy systems, makes the 800m
-                particularly demanding.
-
               </Typography>
+              <Box
+                  component="img"
+                  src={paceByEventImage}
+                  alt="Pace by event"
+                  className="img5"
+                  onClick={() => openLightbox(3)}
+                  sx={{cursor: "pointer"}}
+              />
             </Box>
+            <Typography variant="h6" component="p" className="text text6">
+              The challenge in the 800m run is to balance these systems. Athletes need to start fast enough to be
+              competitive but must conserve enough energy to maintain a strong pace and finish with a powerful sprint.
+              This balancing act between speed and endurance, and the switch between energy systems, makes the 800m
+              particularly demanding.
+            </Typography>
+            <Typography className="subtitle">
+                Evolution of Athletic Performance
+            </Typography>
+            <Typography variant="h6" className="text7">
+              Another interesting chapter is the development of winning times over the years. The plots show the
+              developments of winning times with the help of regression lines.
+            </Typography>
             <Box className="row">
               <Box
                   component="img"
                   src={winningTimesProgressionImage}
                   alt="Winning Times Progression"
-                  className="rightImage"
+                  className="img8"
                   onClick={() => openLightbox(4)}
                   sx={{cursor: "pointer"}}
               />
-              <Typography variant="h6" component="p" className="text" style={{alignSelf: 'flex-start'}}>
-                Another interesting chapter is the development of winning times over the years. The plots show the
-                developments of winning times with the help of regression lines.
-                <br/>
-                <br/>
+              <Typography variant="h6" component="p" className="text8">
                 The most noticeable trend is seen in the women's 400m event. This is the only discipline where the winning
                 times over the years have actually become slower on average, in contrast to the trend of all other
                 disciplines. This can have various reasons. Among other things, performance-enhancing drugs were often
@@ -187,11 +211,11 @@ export default function DataStory() {
                 10,000m run for women was in 1981.
               </Typography>
             </Box>
+            <Typography className="subtitle">
+              Country Records
+            </Typography>
             <Box className="row">
-              <Typography
-                  variant="h6" component="p" className="text"
-                  sx={{width: 700}}
-              >
+              <Typography variant="h6" component="p" className="text9">
                 During the Cold War era, the USA and Russia emerged as formidable
                 rivals in global athletics. This rivalry was marked by intense
                 competition and numerous record-setting performances. However, over
