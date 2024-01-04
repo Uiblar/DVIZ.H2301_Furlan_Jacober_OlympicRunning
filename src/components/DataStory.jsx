@@ -51,21 +51,28 @@ export default function DataStory() {
 
           <Box className="container">
             <Box className="block0">
-              <Typography className="subtitle">
+              <Typography className="h2">
                 Visualizing Running Data
               </Typography>
               <Typography variant="h6" className="text text0">
-                This journey to figure out when runners perform their best covers all types of races, from short sprints to long marathons. We look at interesting aspects like how old the athletes are, whether they're male or female, and how their bodies adapt to sports. This analysis looks closely at the ages of the top 1000 runners in each racing event. It questions the common idea that athletes are at their best around the age of 25. By looking at information from various races, from short to long distances, the research shows that the best age for performance can differ. It especially points out that there are differences in peak performance ages between men and women.
+                This journey to figure out when runners perform their best covers all types of races,
+                from short sprints to long marathons. We look at interesting aspects like how old the
+                athletes are, whether they're male or female, and how their bodies adapt to sports.
+                This analysis looks closely at the ages of the top 1000 runners in each racing event.
+                It questions the common idea that athletes are at their best around the age of 25.
+                By looking at information from various races, from short to long distances, the research
+                shows that the best age for performance can differ. It especially points out that there are
+                differences in peak performance ages between men and women.
                 <br/>
                 <br/>
               </Typography>
             </Box>
             <Box className="block1">
-              <Typography className="subtitle">
+              <Typography className="h2">
                 Best years for running?
               </Typography>
               <Box className="row">
-                <Typography variant="h6" component="p" sx={{mb: 2}}>
+                <Typography variant="h6" component="p" className="text text1">
                   What is the expected age of peak performance for runners? And does
                   this vary by event? Let's take a look at the age distribution of the
                   top 1000 runners in each event. It is generally accepted that peak
@@ -81,10 +88,17 @@ export default function DataStory() {
                       <sup>[1]</sup>
                     </Link>
                   </Tooltip>
+                  <br/>
+                  <br/>
+                  The charts show the particular age of the athletes. The higher the bar the more
+                  athletes are in that group.
                 </Typography>
               </Box>
-              <Box className="row">
-                <Typography variant="h6" component="p" className="text">
+              <Typography className="h3">
+                Sprint events
+              </Typography>
+              <Box className="row" >
+                <Typography variant="h6" component="p" className="text text2">
                   For the sprint events (100m, 200m, 400m), we see that the peak age
                   is in the early 20s.
                   <br/>
@@ -95,30 +109,36 @@ export default function DataStory() {
                     component="img"
                     src={sprintEventsImage}
                     alt="Sprint Events Age Distribution"
-                    className="image"
+                    className="img1"
                     onClick={() => openLightbox(0)}
                     sx={{cursor: "pointer"}}
                 />
               </Box>
+              <Typography className="h3">
+                Middle distance
+              </Typography>
               <Box className="row">
-                <Box
-                    component="img"
-                    src={middleDistanceEventsImage}
-                    alt="Middle Distance Events Age Distribution"
-                    className="image"
-                    onClick={() => openLightbox(1)}
-                    sx={{cursor: "pointer"}}
-                />
-                <Typography variant="h6" component="p" className="text">
+                <Typography variant="h6" component="p" className="text text3">
                   For the middle distance events (800m, 1500m, 3000m), we see that the
                   performance ages remain consistent with our initial observations.
                   The data suggests a subtle yet observable variance in peak
                   performance timing between genders across these disciplines.
                 </Typography>
+                <Box
+                    component="img"
+                    src={middleDistanceEventsImage}
+                    alt="Middle Distance Events Age Distribution"
+                    className="img1"
+                    onClick={() => openLightbox(1)}
+                    sx={{cursor: "pointer"}}
+                />
               </Box>
+              <Typography className="h3">
+                Long distance
+              </Typography>
               <Box className="row">
-                <Typography variant="h6" component="p" className="text">
-                  Many athlets start their careers on the track and move up to the
+                <Typography variant="h6" component="p" className="text text4">
+                  Many athletes start their careers on the track and move up to the
                   half marathon and marathon later in their careers. While this is
                   reflected in the top times for the marathon, a larger proportion of
                   the top times in the half marathon are from athletes in their early
@@ -136,18 +156,18 @@ export default function DataStory() {
                     component="img"
                     src={longDistanceEventsImage}
                     alt="Long Distance Events Age Distribution"
-                    className="image"
+                    className="img1"
                     onClick={() => openLightbox(2)}
                     sx={{cursor: "pointer"}}
                 />
               </Box>
             </Box>
             <Box className="block0">
-              <Typography className="subtitle">
+              <Typography className="h2">
                 Running pace and the energy systems
               </Typography>
             </Box>
-            <Box className="row2">
+            <Box className="row1">
               <Typography variant="h6" component="p" className="text text5">
                 Athletic performance hinges on two energy systems: anaerobic for
                 short, intense activities like sprints, and aerobic for longer,
@@ -165,7 +185,7 @@ export default function DataStory() {
                   component="img"
                   src={paceByEventImage}
                   alt="Pace by event"
-                  className="img5"
+                  className="img2"
                   onClick={() => openLightbox(3)}
                   sx={{cursor: "pointer"}}
               />
@@ -176,23 +196,23 @@ export default function DataStory() {
               This balancing act between speed and endurance, and the switch between energy systems, makes the 800m
               particularly demanding.
             </Typography>
-            <Typography className="subtitle">
+            <Typography className="h2">
                 Evolution of Athletic Performance
             </Typography>
             <Typography variant="h6" className="text7">
               Another interesting chapter is the development of winning times over the years. The plots show the
               developments of winning times with the help of regression lines.
             </Typography>
-            <Box className="row">
+            <Box className="row1">
               <Box
                   component="img"
                   src={winningTimesProgressionImage}
                   alt="Winning Times Progression"
-                  className="img8"
+                  className="img3"
                   onClick={() => openLightbox(4)}
                   sx={{cursor: "pointer"}}
               />
-              <Typography variant="h6" component="p" className="text8">
+              <Typography variant="h6" component="p" className="text text8">
                 The most noticeable trend is seen in the women's 400m event. This is the only discipline where the winning
                 times over the years have actually become slower on average, in contrast to the trend of all other
                 disciplines. This can have various reasons. Among other things, performance-enhancing drugs were often
@@ -211,11 +231,11 @@ export default function DataStory() {
                 10,000m run for women was in 1981.
               </Typography>
             </Box>
-            <Typography className="subtitle">
+            <Typography className="h2">
               Country Records
             </Typography>
-            <Box className="row">
-              <Typography variant="h6" component="p" className="text9">
+            <Box className="block0">
+              <Typography variant="h6" className="text9">
                 During the Cold War era, the USA and Russia emerged as formidable
                 rivals in global athletics. This rivalry was marked by intense
                 competition and numerous record-setting performances. However, over
@@ -227,15 +247,17 @@ export default function DataStory() {
                 of excellence in athletics and inspiring a new generation of
                 runners.
               </Typography>
+            </Box>
+            <Box className="block0">
               <iframe
-                  className="image"
+                  className="mapImg"
                   width={"900px"}
                   height={"600px"}
                   src="choropleth_map.html"
                   title="Records by Country"
               ></iframe>
             </Box>
-        </Box>
+          </Box>
         </div>
         <Lightbox
             open={lightboxOpen}
