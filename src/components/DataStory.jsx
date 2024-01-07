@@ -55,14 +55,13 @@ export default function DataStory() {
                 Visualizing Running Data
               </Typography>
               <Typography variant="h6" className="text text0">
-                This journey to figure out when runners perform their best covers all types of races,
-                from short sprints to long marathons. We look at interesting aspects like how old the
-                athletes are, whether they're male or female, and how their bodies adapt to sports.
-                This analysis looks closely at the ages of the top 1000 runners in each racing event.
-                It questions the common idea that athletes are at their best around the age of 25.
-                By looking at information from various races, from short to long distances, the research
-                shows that the best age for performance can differ. It especially points out that there are
-                differences in peak performance ages between men and women.
+                This analysis aims to determine when runners perform their best, covering all types of races, from
+                short sprints to long marathons. We examine aspects such as the age of the athletes, their gender,
+                and their physical adaptations to the sport. This analysis looks closely at the ages of the top 1000
+                runners in each racing event. It questions the common idea that athletes are at their best around the
+                age of 25. By examining data across various race distances, the research shows that the optimal age
+                for peak performance can vary. It especially points out that there are differences in peak performance
+                ages between men and women.
                 <br/>
                 <br/>
               </Typography>
@@ -99,11 +98,9 @@ export default function DataStory() {
               </Typography>
               <Box className="row" >
                 <Typography variant="h6" component="p" className="text text2">
-                  For the sprint events (100m, 200m, 400m), we see that the peak age
-                  is in the early 20s.
+                  For the sprint events (100m, 200m, 400m), we see that the peak age is in the early 20s.
                   <br/>
-                  It is interesting to note that that the woman peak slightly later
-                  than the man.
+                  It is interesting to note that women peak slightly later than men.
                 </Typography>
                 <Box
                     component="img"
@@ -169,15 +166,18 @@ export default function DataStory() {
             </Box>
             <Box className="row1">
               <Typography variant="h6" component="p" className="text text5">
-                Athletic performance hinges on two energy systems: anaerobic for
-                short, intense activities like sprints, and aerobic for longer,
-                endurance events. The anaerobic system quickly delivers energy
-                without oxygen, ideal for events up to 400m. In contrast, the
-                aerobic system, vital for races over 800m, depends on oxygen and
-                endurance training. Developing aerobic capacity takes years,
-                explaining why long-distance athletes are often older. Their
-                prolonged training culminates in a robust aerobic system, suited for
-                the demands of endurance events.
+                In this chart, you can see the median running pace for particular running events. One can see that both
+                slopes, for women and men, slightly match an S pattern. This is because of the change from one energy
+                system to the other at the 800m event.
+                <br/>
+                Athletic performance hinges on two energy systems: the <span className="red-text">anaerobic</span> for
+                short, intense activities like
+                sprints, and the <span className="blue-text">aerobic</span> for longer, endurance events. The anaerobic
+                system quickly delivers energy
+                without oxygen, ideal for events up to 400m. In contrast, the aerobic system, vital for races over
+                800m, depends on oxygen and endurance training. Developing aerobic capacity takes years, explaining
+                why long-distance athletes are often older. Their prolonged training culminates in a robust aerobic
+                system, suited for the demands of endurance events.
                 <br/>
                 <br/>
               </Typography>
