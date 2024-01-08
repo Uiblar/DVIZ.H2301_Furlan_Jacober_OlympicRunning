@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <AppBar
       position="static"
-      style={{ backgroundColor: "#B57B6F", width: "100%", height: "64px" }}
+      style={{ backgroundColor: "#d76749", width: "100%", height: "64px" }}
     >
       <Toolbar style={{ height: "100%" }}>
         <Typography variant="h6" style={{ flexGrow: 1, fontSize: "1.25rem" }}>
