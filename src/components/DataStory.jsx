@@ -91,6 +91,8 @@ export default function DataStory() {
                   <br/>
                   The charts show the particular age of the athletes. The higher the bar the more
                   athletes are in that group.
+                  <br/>
+                  Click on the charts for an enhanced, larger view.
                 </Typography>
               </Box>
               <Typography className="h3">
@@ -246,6 +248,10 @@ export default function DataStory() {
                 broken records and won numerous accolades, redefining the standards
                 of excellence in athletics and inspiring a new generation of
                 runners.
+                <br/>
+                <br/>
+                First country listed is New Zealand. It should be noted that this is simply the first entry in this
+                dataset and that this dataset is limited to the top 1000.
               </Typography>
             </Box>
             <Box className="block0">
