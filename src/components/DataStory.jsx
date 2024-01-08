@@ -8,6 +8,7 @@ import middleDistanceEventsImage from "../assets/middle_distance_events.png";
 import longDistanceEventsImage from "../assets/long_distance_events.png";
 import paceByEventImage from "../assets/pace_by_event.png";
 import winningTimesProgressionImage from "../assets/winning_times_progression.png";
+import selectedCountriesImage from "../assets/selected_countries.png";
 import "./DataStory.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -25,6 +26,7 @@ export default function DataStory() {
     { src: longDistanceEventsImage },
     { src: paceByEventImage },
     { src: winningTimesProgressionImage },
+    { src: selectedCountriesImage },
   ];
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -43,7 +45,7 @@ export default function DataStory() {
           backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "repeat", // to repeat the image
-          height: "5000px", // or any other size
+          height: "6000px", // or any other size
           width: "100%", // or any other size
         }}
       >
@@ -235,8 +237,8 @@ export default function DataStory() {
             </Typography>
           </Box>
           <Typography className="h2">Country Records</Typography>
-          <Box className="block0">
-            <Typography variant="h6" className="text9">
+          <Box className="row1">
+            <Typography variant="h6" className="text text7">
               During the Cold War era, the USA and Russia emerged as formidable
               rivals in global athletics. This rivalry was marked by intense
               competition and numerous record-setting performances. However,
@@ -251,19 +253,26 @@ export default function DataStory() {
               <br />
               First country listed is New Zealand. It should be noted that this
               is simply the first entry in this dataset and that this dataset is
-              limited to the top 1000.
-              The graph shows the percentage per country of the cumulative records to that point in time.
+              limited to the top 1000. The graph shows the percentage per
+              country of the cumulative records to that point in time.
             </Typography>
+            <Box
+              component="img"
+              src={selectedCountriesImage}
+              alt="Selected Countries"
+              className="img3"
+              onClick={() => openLightbox(5)}
+              sx={{ cursor: "pointer" }}
+            />
           </Box>
-          <Box className="block0">
-            <iframe
-              className="mapImg"
-              width={"900px"}
-              height={"600px"}
-              src="choropleth_map_percentage.html"
-              title="Records by Country"
-            ></iframe>
-          </Box>
+
+          <iframe
+            className="mapImg"
+            width={"1500px"}
+            height={"700px"}
+            src="choropleth_map_percentage.html"
+            title="Records by Country"
+          ></iframe>
         </Box>
       </div>
       <Lightbox
